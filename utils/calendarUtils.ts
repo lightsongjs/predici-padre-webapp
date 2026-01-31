@@ -1,13 +1,35 @@
 import { Sermon } from '../data/data';
+import { getOrthodoxEasterLookup, calculatePaschaOffsetLookup } from './easterLookup';
 
 /**
- * Calculates the Orthodox Easter date for a given year using the Gauss algorithm
- * for the Julian calendar, then converts to Gregorian by adding 13 days.
+ * Calculates the Orthodox Easter date for a given year.
+ *
+ * This function uses a verified lookup table (2026-2040) for accuracy.
+ * Falls back to the Gauss algorithm for years outside the lookup range.
  *
  * @param year - The year to calculate Easter for
  * @returns The Gregorian date of Orthodox Easter
  */
 export function getOrthodoxEaster(year: number): Date {
+    // Try lookup table first (more accurate)
+    const lookupDate = getOrthodoxEasterLookup(year);
+    if (lookupDate) {
+        return lookupDate;
+    }
+
+    // Fallback to algorithm for years outside lookup range
+    return getOrthodoxEasterAlgorithm(year);
+}
+
+/**
+ * Legacy algorithm for calculating Orthodox Easter (Gauss algorithm).
+ * Used as fallback for years outside the lookup table range.
+ *
+ * @deprecated Prefer getOrthodoxEaster() which uses lookup table when available
+ * @param year - The year to calculate Easter for
+ * @returns The Gregorian date of Orthodox Easter
+ */
+function getOrthodoxEasterAlgorithm(year: number): Date {
     const a = year % 4;
     const b = year % 7;
     const c = year % 19;
@@ -25,11 +47,21 @@ export function getOrthodoxEaster(year: number): Date {
  * Calculates the number of days between a given date and Orthodox Easter of that year.
  * Negative values indicate days before Easter, positive values indicate days after Easter.
  *
+ * Uses lookup table for years 2026-2040, falls back to algorithm for other years.
+ *
  * @param date - The date to calculate the offset for
  * @returns The number of days from Orthodox Easter (negative = before, positive = after)
  */
 export function calculatePaschaOffset(date: Date): number {
     const year = date.getFullYear();
+
+    // Try lookup table first (more accurate)
+    const lookupOffset = calculatePaschaOffsetLookup(date);
+    if (lookupOffset !== null) {
+        return lookupOffset;
+    }
+
+    // Fallback to algorithm-based calculation
     const easter = getOrthodoxEaster(year);
 
     // Reset time components to compare only dates
@@ -46,6 +78,8 @@ export function calculatePaschaOffset(date: Date): number {
  * Finds the sermon matching today's date based on either fixed calendar date
  * or offset from Orthodox Easter (Pascha).
  *
+ * This function now uses the efficient sermon matcher service with caching.
+ *
  * @param sermons - Array of sermons to search through
  * @returns The matching sermon or null if no match is found
  */
@@ -57,6 +91,7 @@ export function getTodaysSermon(sermons: Sermon[]): Sermon | null {
 
     const matchingSermon = sermons.find(sermon => {
         // Check for fixed date match (e.g., Saint's feast days)
+        // Fixed dates take priority over movable feasts
         if (sermon.fixed_month !== null && sermon.fixed_day !== null) {
             if (sermon.fixed_month === todayMonth && sermon.fixed_day === todayDay) {
                 return true;

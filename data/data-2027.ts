@@ -15,7 +15,7 @@ export interface Sermon {
   liturgicalDate?: string;
 }
 
-export const sermons: Sermon[] = [
+export const sermons2027: Sermon[] = [
   {
     id: "s001",
     title: "Anul Nou - Tăierea împrejur - Sf. Vasile cel Mare",
@@ -25,7 +25,7 @@ export const sermons: Sermon[] = [
     fixed_month: 1,
     fixed_day: 1,
     duration: "21:00",
-    liturgicalDate: "2026-01-01"
+    liturgicalDate: "2027-01-01"
   },
   {
     id: "s002",
@@ -36,7 +36,7 @@ export const sermons: Sermon[] = [
     fixed_month: 1,
     fixed_day: 5,
     duration: "18:00",
-    liturgicalDate: "2026-01-05"
+    liturgicalDate: "2027-01-05"
   },
   {
     id: "s003",
@@ -47,20 +47,10 @@ export const sermons: Sermon[] = [
     fixed_month: 1,
     fixed_day: 7,
     duration: "16:00",
-    liturgicalDate: "2026-01-07"
+    liturgicalDate: "2027-01-07"
   },
   {
     id: "s004",
-    title: "Duminica Vameșului și Fariseului",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 33-a după Rusalii - 2020.mp3",
-    type: "movable",
-    pascha_offset: -70,
-    duration: "24:00",
-    liturgicalDate: "2026-02-01"
-  },
-  {
-    id: "s005",
     title: "Întâmpinarea Domnului",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Școala de Duminică - Despre Tatăl care ne iubește și ne iese în întâmpinare.mp3",
@@ -68,80 +58,60 @@ export const sermons: Sermon[] = [
     fixed_month: 2,
     fixed_day: 2,
     duration: "30:00",
-    liturgicalDate: "2026-02-02"
+    liturgicalDate: "2027-02-02"
+  },
+  {
+    id: "s005",
+    title: "Duminica a 33-a după Rusalii",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 33-a după Rusalii - 2020.mp3",
+    type: "movable",
+    pascha_offset: -70,
+    duration: "24:00",
+    liturgicalDate: "2027-02-21"
   },
   {
     id: "s006",
-    title: "Duminica Fiului Risipitor",
+    title: "Duminica a 34-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 34-a după Rusalii - 2020.mp3",
     type: "movable",
     pascha_offset: -63,
     duration: "20:00",
-    liturgicalDate: "2026-02-08"
+    liturgicalDate: "2027-02-28"
   },
   {
     id: "s007",
-    title: "Duminica Înfricoșătoarei Judecăți (Lăsatul Sec de Carne)",
+    title: "Duminica Înfricoșătoarei Judecăți",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Duminica Înfricoșătoarei Judecăți - 2020.mp3",
     type: "movable",
     pascha_offset: -56,
     duration: "30:00",
-    liturgicalDate: "2026-02-15"
+    liturgicalDate: "2027-03-07"
   },
   {
     id: "s008",
-    title: "Duminica Lăsatului Sec de Brânză (Iertării)",
+    title: "Duminica a 36-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 36-a după Rusalii - 2019.m4a",
     type: "movable",
     pascha_offset: -49,
     duration: "45:00",
-    liturgicalDate: "2026-02-22"
+    liturgicalDate: "2027-03-14"
   },
   {
     id: "s009",
-    title: "Duminica I din Postul Mare - Duminica Ortodoxiei",
+    title: "Duminica Ortodoxiei",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Duminica 1 din Post - 2018.mp3",
     type: "movable",
     pascha_offset: -42,
     duration: "23:00",
-    liturgicalDate: "2026-03-01"
+    liturgicalDate: "2027-03-21"
   },
   {
     id: "s010",
-    title: "Duminica a II-a din Postul Mare - Sfântul Grigorie Palama",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 2-a din Post - 2019.m4a",
-    type: "movable",
-    pascha_offset: -35,
-    duration: "43:00",
-    liturgicalDate: "2026-03-08"
-  },
-  {
-    id: "s011",
-    title: "Duminica a III-a din Postul Mare - Închinarea Sfintei Cruci",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 3-a din Post - 2019.m4a",
-    type: "movable",
-    pascha_offset: -28,
-    duration: "38:00",
-    liturgicalDate: "2026-03-15"
-  },
-  {
-    id: "s012",
-    title: "Duminica a IV-a din Postul Mare - Sfântul Ioan Scărarul",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 4-a din Postul Mare - 2020.mp3",
-    type: "movable",
-    pascha_offset: -21,
-    duration: "22:00",
-    liturgicalDate: "2026-03-22"
-  },
-  {
-    id: "s013",
     title: "Buna Vestire",
     category: "Predici de Sărbători",
     audio_url: "https://r2.predicileparintelui.ro/audio/Buna Vestire - 2017.mp3",
@@ -149,10 +119,10 @@ export const sermons: Sermon[] = [
     fixed_month: 3,
     fixed_day: 24,
     duration: "21:00",
-    liturgicalDate: "2026-03-24"
+    liturgicalDate: "2027-03-24"
   },
   {
-    id: "s014",
+    id: "s011",
     title: "Buna Vestire",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Buna Vestire - 2017.mp3",
@@ -160,40 +130,50 @@ export const sermons: Sermon[] = [
     fixed_month: 3,
     fixed_day: 25,
     duration: "21:00",
-    liturgicalDate: "2026-03-25"
+    liturgicalDate: "2027-03-25"
+  },
+  {
+    id: "s012",
+    title: "Sfântul Grigorie Palama",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 2-a din Post - 2019.m4a",
+    type: "movable",
+    pascha_offset: -35,
+    duration: "43:00",
+    liturgicalDate: "2027-03-28"
+  },
+  {
+    id: "s013",
+    title: "Duminica Sfintei Cruci",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 3-a din Post - 2019.m4a",
+    type: "movable",
+    pascha_offset: -28,
+    duration: "38:00",
+    liturgicalDate: "2027-04-04"
+  },
+  {
+    id: "s014",
+    title: "Sfântul Ioan Scărarul",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 4-a din Postul Mare - 2020.mp3",
+    type: "movable",
+    pascha_offset: -21,
+    duration: "22:00",
+    liturgicalDate: "2027-04-11"
   },
   {
     id: "s015",
-    title: "Duminica a V-a din Postul Mare - Sfânta Maria Egipteanca",
+    title: "Sfânta Maria Egipteanca",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 5-a din Post - 2019.m4a",
     type: "movable",
     pascha_offset: -14,
     duration: "52:00",
-    liturgicalDate: "2026-03-29"
+    liturgicalDate: "2027-04-18"
   },
   {
     id: "s016",
-    title: "Duminica a VI-a din Postul Mare - Floriile (Intrarea Domnului în Ierusalim)",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Duminica a 6-a din Post (Floriile) - 2017.mp3",
-    type: "movable",
-    pascha_offset: -7,
-    duration: "15:00",
-    liturgicalDate: "2026-04-05"
-  },
-  {
-    id: "s017",
-    title: "Învierea Domnului - Sfintele Paști",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică în a doua zi de Paști (2 Mai 2016).mp3",
-    type: "movable",
-    pascha_offset: 0,
-    duration: "24:00",
-    liturgicalDate: "2026-04-12"
-  },
-  {
-    id: "s018",
     title: "Sf. Mare Mucenic Gheorghe",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Sf. M. Mc. Gheorghe și asumarea jertfei în viața noastră.mp3",
@@ -201,50 +181,40 @@ export const sermons: Sermon[] = [
     fixed_month: 4,
     fixed_day: 23,
     duration: "20:00",
-    liturgicalDate: "2026-04-23"
+    liturgicalDate: "2027-04-23"
+  },
+  {
+    id: "s017",
+    title: "Duminica Floriilor",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Duminica a 6-a din Post (Floriile) - 2017.mp3",
+    type: "movable",
+    pascha_offset: -7,
+    duration: "15:00",
+    liturgicalDate: "2027-04-25"
+  },
+  {
+    id: "s018",
+    title: "Învierea Domnului - Paștele",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică în a doua zi de Paști (2 Mai 2016).mp3",
+    type: "movable",
+    pascha_offset: 0,
+    duration: "24:00",
+    liturgicalDate: "2027-05-02"
   },
   {
     id: "s019",
-    title: "Duminica a II-a după Paști - Duminica Mironosițelor",
+    title: "Duminica a 2-a după Paști",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 2-a după Paști - 2019.m4a",
     type: "movable",
     pascha_offset: 14,
     duration: "32:00",
-    liturgicalDate: "2026-04-26"
+    liturgicalDate: "2027-05-16"
   },
   {
     id: "s020",
-    title: "Duminica a III-a după Paști - Duminica Slăbănogului",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 3-a după Paști - 2020.mp3",
-    type: "movable",
-    pascha_offset: 21,
-    duration: "23:00",
-    liturgicalDate: "2026-05-03"
-  },
-  {
-    id: "s021",
-    title: "Duminica a IV-a după Paști - Duminica Samarinencii",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 4-a după Paști - 2019.m4a",
-    type: "movable",
-    pascha_offset: 28,
-    duration: "37:00",
-    liturgicalDate: "2026-05-10"
-  },
-  {
-    id: "s022",
-    title: "Duminica a V-a după Paști - Duminica Orbului din naștere",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Duminica a 5-a după Paști - 2017.mp3",
-    type: "movable",
-    pascha_offset: 35,
-    duration: "18:00",
-    liturgicalDate: "2026-05-17"
-  },
-  {
-    id: "s023",
     title: "Sfinții Împărați Constantin și Elena",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la sărbătoarea Sfinților Mari Împărați Constantin și Elena.mp3",
@@ -252,110 +222,110 @@ export const sermons: Sermon[] = [
     fixed_month: 5,
     fixed_day: 21,
     duration: "12:00",
-    liturgicalDate: "2026-05-21"
+    liturgicalDate: "2027-05-21"
+  },
+  {
+    id: "s021",
+    title: "Duminica a 3-a după Paști",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 3-a după Paști - 2020.mp3",
+    type: "movable",
+    pascha_offset: 21,
+    duration: "23:00",
+    liturgicalDate: "2027-05-23"
+  },
+  {
+    id: "s022",
+    title: "Duminica a 4-a după Paști",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 4-a după Paști - 2019.m4a",
+    type: "movable",
+    pascha_offset: 28,
+    duration: "37:00",
+    liturgicalDate: "2027-05-30"
+  },
+  {
+    id: "s023",
+    title: "Duminica a 5-a după Paști",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Duminica a 5-a după Paști - 2017.mp3",
+    type: "movable",
+    pascha_offset: 35,
+    duration: "18:00",
+    liturgicalDate: "2027-06-06"
   },
   {
     id: "s024",
-    title: "Duminica a VI-a după Paști - Duminica Sfinților Părinți de la Sinodul I Ecumenic",
+    title: "Duminica a 6-a după Paști",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 6-a după Paști - 2019.m4a",
     type: "movable",
     pascha_offset: 42,
     duration: "39:00",
-    liturgicalDate: "2026-05-24"
+    liturgicalDate: "2027-06-13"
   },
   {
     id: "s025",
-    title: "Rusaliile - Pogorârea Sfântului Duh (Duminica a VII-a după Paști)",
+    title: "Duminica a 7-a după Paști",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 7-a după Paști - 2020.mp3",
     type: "movable",
     pascha_offset: 49,
     duration: "21:00",
-    liturgicalDate: "2026-05-31"
+    liturgicalDate: "2027-06-20"
   },
   {
     id: "s026",
-    title: "Duminica a II-a după Rusalii - Duminica Tuturor Sfinților Români",
+    title: "Duminica a 2-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Duminica a 2-a după Rusalii - 2017.mp3",
     type: "movable",
     pascha_offset: 63,
     duration: "22:00",
-    liturgicalDate: "2026-06-14"
+    liturgicalDate: "2027-07-04"
   },
   {
     id: "s027",
-    title: "Duminica a III-a după Rusalii",
+    title: "Duminica a 3-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 3-a după Rusalii - 2019.m4a",
     type: "movable",
     pascha_offset: 70,
     duration: "46:00",
-    liturgicalDate: "2026-06-21"
+    liturgicalDate: "2027-07-11"
   },
   {
     id: "s028",
-    title: "Duminica a IV-a după Rusalii",
+    title: "Duminica a 4-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 4-a după Rusalii - 2019.m4a",
     type: "movable",
     pascha_offset: 77,
     duration: "36:00",
-    liturgicalDate: "2026-06-28"
+    liturgicalDate: "2027-07-18"
   },
   {
     id: "s029",
-    title: "Duminica a V-a după Rusalii",
+    title: "Duminica a 5-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 5-a după Rusalii - 2019.m4a",
     type: "movable",
     pascha_offset: 84,
     duration: "54:00",
-    liturgicalDate: "2026-07-05"
+    liturgicalDate: "2027-07-25"
   },
   {
     id: "s030",
-    title: "Duminica a VI-a după Rusalii",
+    title: "Duminica a 6-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 6-a după Rusalii - 2019.m4a",
     type: "movable",
     pascha_offset: 91,
     duration: "47:00",
-    liturgicalDate: "2026-07-12"
+    liturgicalDate: "2027-08-01"
   },
   {
     id: "s031",
-    title: "Duminica a VII-a după Rusalii",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 7-a după Rusalii - 2019.mp3",
-    type: "movable",
-    pascha_offset: 98,
-    duration: "22:00",
-    liturgicalDate: "2026-07-19"
-  },
-  {
-    id: "s032",
-    title: "Duminica a VIII-a după Rusalii",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 8-a după Rusalii - 2019.mp3",
-    type: "movable",
-    pascha_offset: 105,
-    duration: "20:00",
-    liturgicalDate: "2026-07-26"
-  },
-  {
-    id: "s033",
-    title: "Duminica a IX-a după Rusalii",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 9-a după Rusalii - 2015.mp3",
-    type: "movable",
-    pascha_offset: 112,
-    duration: "17:00",
-    liturgicalDate: "2026-08-02"
-  },
-  {
-    id: "s034",
     title: "Schimbarea la Față",
     category: "Predici de Sărbători",
     audio_url: "https://r2.predicileparintelui.ro/audio/Schimbarea la Față a Domnului - 2017.mp3",
@@ -363,10 +333,10 @@ export const sermons: Sermon[] = [
     fixed_month: 8,
     fixed_day: 5,
     duration: "20:00",
-    liturgicalDate: "2026-08-05"
+    liturgicalDate: "2027-08-05"
   },
   {
-    id: "s035",
+    id: "s032",
     title: "Schimbarea la Față a Domnului",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Schimbarea la Față a Domnului - 2017.mp3",
@@ -374,82 +344,60 @@ export const sermons: Sermon[] = [
     fixed_month: 8,
     fixed_day: 6,
     duration: "20:00",
-    liturgicalDate: "2026-08-06"
+    liturgicalDate: "2027-08-06"
+  },
+  {
+    id: "s033",
+    title: "Duminica a 7-a după Rusalii",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 7-a după Rusalii - 2019.mp3",
+    type: "movable",
+    pascha_offset: 98,
+    duration: "22:00",
+    liturgicalDate: "2027-08-08"
+  },
+  {
+    id: "s034",
+    title: "Duminica a 8-a după Rusalii",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 8-a după Rusalii - 2019.mp3",
+    type: "movable",
+    pascha_offset: 105,
+    duration: "20:00",
+    liturgicalDate: "2027-08-15"
+  },
+  {
+    id: "s035",
+    title: "Duminica a 9-a după Rusalii",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 9-a după Rusalii - 2015.mp3",
+    type: "movable",
+    pascha_offset: 112,
+    duration: "17:00",
+    liturgicalDate: "2027-08-22"
   },
   {
     id: "s036",
-    title: "Duminica a X-a după Rusalii",
+    title: "Duminica a 10-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 10-a după Rusalii - 2017.mp3",
     type: "movable",
     pascha_offset: 119,
     duration: "26:00",
-    liturgicalDate: "2026-08-09"
+    liturgicalDate: "2027-08-29"
   },
   {
     id: "s037",
-    title: "Adormirea Maicii Domnului",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Cuvânt duhovnicesc la Prohodul Maicii Domnului - 2020.mp3",
-    type: "fixed",
-    fixed_month: 8,
-    fixed_day: 15,
-    duration: "18:00",
-    liturgicalDate: "2026-08-15"
-  },
-  {
-    id: "s038",
-    title: "Duminica a XI-a după Rusalii",
+    title: "Duminica a 11-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 11-a după Rusalii - 2015.mp3",
     type: "movable",
     pascha_offset: 126,
     duration: "24:00",
-    liturgicalDate: "2026-08-16"
+    liturgicalDate: "2027-09-05"
   },
   {
-    id: "s039",
-    title: "Duminica a XII-a după Rusalii",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 12-a după Rusalii - 2017.mp3",
-    type: "movable",
-    pascha_offset: 133,
-    duration: "25:00",
-    liturgicalDate: "2026-08-23"
-  },
-  {
-    id: "s040",
-    title: "Tăierea Capului Sf. Ioan Botezătorul",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Sf Ioan Botezătorul - încheierea unei slujiri ce devine un nou început.mp3",
-    type: "fixed",
-    fixed_month: 8,
-    fixed_day: 29,
-    duration: "13:00",
-    liturgicalDate: "2026-08-29"
-  },
-  {
-    id: "s041",
-    title: "Duminica a XIII-a după Rusalii",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 13-a după Rusalii - 2017.mp3",
-    type: "movable",
-    pascha_offset: 140,
-    duration: "20:00",
-    liturgicalDate: "2026-08-30"
-  },
-  {
-    id: "s042",
-    title: "Duminica a XIV-a după Rusalii - Înălțarea Sfintei Cruci",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 14-a după Rusalii - 2015.mp3",
-    type: "movable",
-    pascha_offset: 147,
-    duration: "22:00",
-    liturgicalDate: "2026-09-06"
-  },
-  {
-    id: "s043",
+    id: "s038",
     title: "Nașterea Maicii Domnului",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la praznicul Adormirii Maicii Domnului - 2020.mp3",
@@ -457,10 +405,20 @@ export const sermons: Sermon[] = [
     fixed_month: 9,
     fixed_day: 8,
     duration: "15:00",
-    liturgicalDate: "2026-09-08"
+    liturgicalDate: "2027-09-08"
   },
   {
-    id: "s044",
+    id: "s039",
+    title: "Duminica a 12-a după Rusalii",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 12-a după Rusalii - 2017.mp3",
+    type: "movable",
+    pascha_offset: 133,
+    duration: "25:00",
+    liturgicalDate: "2027-09-12"
+  },
+  {
+    id: "s040",
     title: "Înălțarea Sfintei Cruci",
     category: "Predici de Sărbători",
     audio_url: "https://r2.predicileparintelui.ro/audio/Duminica după Înălțarea Sfintei Cruci - 2017.mp3",
@@ -468,10 +426,10 @@ export const sermons: Sermon[] = [
     fixed_month: 9,
     fixed_day: 13,
     duration: "27:00",
-    liturgicalDate: "2026-09-13"
+    liturgicalDate: "2027-09-13"
   },
   {
-    id: "s045",
+    id: "s041",
     title: "Înălțarea Sfintei Cruci",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Școala de Duminică - Crucea, în viața Sfântului Iosif cel Nou.mp3",
@@ -479,10 +437,10 @@ export const sermons: Sermon[] = [
     fixed_month: 9,
     fixed_day: 14,
     duration: "31:00",
-    liturgicalDate: "2026-09-14"
+    liturgicalDate: "2027-09-14"
   },
   {
-    id: "s046",
+    id: "s042",
     title: "Sf. Iosif cel Nou de la Partoș",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la 15 Sept. 2019 - Sfântul Iosif cel Nou de la Partoș.mp3",
@@ -490,161 +448,162 @@ export const sermons: Sermon[] = [
     fixed_month: 9,
     fixed_day: 15,
     duration: "24:00",
-    liturgicalDate: "2026-09-15"
+    liturgicalDate: "2027-09-15"
   },
   {
-    id: "s047",
-    title: "Duminica a XVI-a după Rusalii - Duminica după Înălțarea Sfintei Cruci",
+    id: "s043",
+    title: "Duminica a 13-a după Rusalii",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 13-a după Rusalii - 2017.mp3",
+    type: "movable",
+    pascha_offset: 140,
+    duration: "20:00",
+    liturgicalDate: "2027-09-19"
+  },
+  {
+    id: "s044",
+    title: "Duminica a 14-a după Rusalii",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 14-a după Rusalii - 2015.mp3",
+    type: "movable",
+    pascha_offset: 147,
+    duration: "22:00",
+    liturgicalDate: "2027-09-26"
+  },
+  {
+    id: "s045",
+    title: "Duminica a 16-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 16-a după Rusalii - 2019.mp3",
     type: "movable",
     pascha_offset: 161,
     duration: "21:00",
-    liturgicalDate: "2026-09-20"
+    liturgicalDate: "2027-10-10"
   },
   {
-    id: "s048",
-    title: "Duminica a XVII-a după Rusalii",
+    id: "s046",
+    title: "Duminica a 17-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Duminica a 17-a după Rusalii - 2017.mp3",
     type: "movable",
     pascha_offset: 168,
     duration: "19:00",
-    liturgicalDate: "2026-09-27"
+    liturgicalDate: "2027-10-17"
   },
   {
-    id: "s049",
-    title: "Duminica a XVIII-a după Rusalii",
+    id: "s047",
+    title: "Duminica a 18-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 18-a după Rusalii - 2019.mp3",
     type: "movable",
     pascha_offset: 175,
     duration: "22:00",
-    liturgicalDate: "2026-10-04"
+    liturgicalDate: "2027-10-24"
   },
   {
-    id: "s050",
-    title: "Duminica a XIX-a după Rusalii",
+    id: "s048",
+    title: "Duminica a 19-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Duminica a 19-a după Rusalii - 2017.mp3",
     type: "movable",
     pascha_offset: 182,
     duration: "19:00",
-    liturgicalDate: "2026-10-11"
+    liturgicalDate: "2027-10-31"
   },
   {
-    id: "s051",
-    title: "Duminica a XX-a după Rusalii",
+    id: "s049",
+    title: "Duminica a 20-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Duminica a 20-a după Rusalii - 2017.mp3",
     type: "movable",
     pascha_offset: 189,
     duration: "23:00",
-    liturgicalDate: "2026-10-18"
+    liturgicalDate: "2027-11-07"
   },
   {
-    id: "s052",
-    title: "Duminica a XXI-a după Rusalii",
+    id: "s050",
+    title: "Soborul Arhanghelilor Mihail și Gavriil",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 24-a după Rusalii (Sf. Arh. Mihail și Gavriil) - 2015.mp3",
+    type: "fixed",
+    fixed_month: 11,
+    fixed_day: 8,
+    duration: "29:00",
+    liturgicalDate: "2027-11-08"
+  },
+  {
+    id: "s051",
+    title: "Duminica a 21-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Duminica a 21-a după Rusalii - 2017.mp3",
     type: "movable",
     pascha_offset: 196,
     duration: "21:00",
-    liturgicalDate: "2026-10-25"
+    liturgicalDate: "2027-11-14"
   },
   {
-    id: "s053",
-    title: "Duminica a XXII-a după Rusalii",
+    id: "s052",
+    title: "Duminica a 22-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 22-a după Rusalii - 2019.mp3",
     type: "movable",
     pascha_offset: 203,
     duration: "26:00",
-    liturgicalDate: "2026-11-01"
+    liturgicalDate: "2027-11-21"
   },
   {
-    id: "s054",
-    title: "Duminica a XXIII-a după Rusalii",
+    id: "s053",
+    title: "Duminica a 23-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 23-a după Rusalii - 2019.mp3",
     type: "movable",
     pascha_offset: 210,
     duration: "20:00",
-    liturgicalDate: "2026-11-08"
+    liturgicalDate: "2027-11-28"
   },
   {
-    id: "s055",
-    title: "Duminica a XXIV-a după Rusalii - Duminica Vameșului și Fariseului (Postul Crăciunului)",
+    id: "s054",
+    title: "Duminica a 24-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 24-a după Rusalii - 2019.mp3",
     type: "movable",
     pascha_offset: 217,
     duration: "19:00",
-    liturgicalDate: "2026-11-15"
+    liturgicalDate: "2027-12-05"
+  },
+  {
+    id: "s055",
+    title: "Sf. Ierarh Nicolae",
+    category: "Predici Duminicale",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 27-a după Rusalii (Sf. Nicolae) - 2015.mp3",
+    type: "fixed",
+    fixed_month: 12,
+    fixed_day: 6,
+    duration: "23:00",
+    liturgicalDate: "2027-12-06"
   },
   {
     id: "s056",
-    title: "Intrarea în Biserică a Maicii Domnului",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 24-a după Rusalii (Sf. Arh. Mihail și Gavriil) - 2015.mp3",
-    type: "fixed",
-    fixed_month: 11,
-    fixed_day: 21,
-    duration: "29:00",
-    liturgicalDate: "2026-11-21"
-  },
-  {
-    id: "s057",
-    title: "Duminica a XXV-a după Rusalii",
+    title: "Duminica a 25-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 25-a după Rusalii - 2019.mp3",
     type: "movable",
     pascha_offset: 224,
     duration: "20:00",
-    liturgicalDate: "2026-11-22"
+    liturgicalDate: "2027-12-12"
   },
   {
-    id: "s058",
-    title: "Duminica a XXVI-a după Rusalii",
+    id: "s057",
+    title: "Duminica a 26-a după Rusalii",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 26-a după Rusalii - 2018.mp3",
     type: "movable",
     pascha_offset: 231,
     duration: "36:00",
-    liturgicalDate: "2026-11-29"
+    liturgicalDate: "2027-12-19"
   },
   {
-    id: "s059",
-    title: "Duminica a XXVII-a după Rusalii - Duminica Sfinților Strămoși",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 27-a după Rusalii - 2018.m4a",
-    type: "movable",
-    pascha_offset: 238,
-    duration: "40:00",
-    liturgicalDate: "2026-12-06"
-  },
-  {
-    id: "s060",
-    title: "Duminica a XXVIII-a după Rusalii - Duminica Sfinților Părinți",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 28-a după Rusalii - 2017.mp3",
-    type: "movable",
-    pascha_offset: 245,
-    duration: "21:00",
-    liturgicalDate: "2026-12-13"
-  },
-  {
-    id: "s061",
-    title: "Duminica a XXIX-a după Rusalii - Duminica dinaintea Nașterii Domnului",
-    category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 29-a după Rusalii - 2020.mp3",
-    type: "movable",
-    pascha_offset: 252,
-    duration: "19:00",
-    liturgicalDate: "2026-12-20"
-  },
-  {
-    id: "s062",
+    id: "s058",
     title: "Nașterea Domnului",
     category: "Predici de Sărbători",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica după Nașterea Domnului - 2017.mp3",
@@ -652,10 +611,10 @@ export const sermons: Sermon[] = [
     fixed_month: 12,
     fixed_day: 24,
     duration: "11:00",
-    liturgicalDate: "2026-12-24"
+    liturgicalDate: "2027-12-24"
   },
   {
-    id: "s063",
+    id: "s059",
     title: "Nașterea Domnului",
     category: "Predici Duminicale",
     audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica după Nașterea Domnului - 2017.mp3",
@@ -663,16 +622,16 @@ export const sermons: Sermon[] = [
     fixed_month: 12,
     fixed_day: 25,
     duration: "11:00",
-    liturgicalDate: "2026-12-25"
+    liturgicalDate: "2027-12-25"
   },
   {
-    id: "s064",
-    title: "Duminica a XXX-a după Rusalii - Duminica după Nașterea Domnului",
+    id: "s060",
+    title: "Duminica a 27-a după Rusalii",
     category: "Predici Duminicale",
-    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 30-a după Rusalii - 2019.mp3",
+    audio_url: "https://r2.predicileparintelui.ro/audio/Predică la Duminica a 27-a după Rusalii - 2018.m4a",
     type: "movable",
-    pascha_offset: 259,
-    duration: "19:00",
-    liturgicalDate: "2026-12-27"
+    pascha_offset: 238,
+    duration: "40:00",
+    liturgicalDate: "2027-12-26"
   },
 ];

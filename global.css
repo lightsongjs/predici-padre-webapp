@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font family classes for NativeWind */
+.font-serif-elegant {
+  font-family: serif;
+}

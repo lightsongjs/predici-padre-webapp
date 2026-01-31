@@ -1,39 +1,124 @@
 {
   "expo": {
-    "name": "predicile-parintelui",
+    "name": "Predicile Părintelui",
     "slug": "predicile-parintelui",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "predicileparintelui",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "primaryLanguage": "ro",
+    "locales": {
+      "ro": "./locales/ro.json"
+    },
+    "notification": {
+      "icon": "./assets/images/notification-icon.png",
+      "color": "#8B1E3F",
+      "androidMode": "default",
+      "androidCollapsedTitle": "Predicile Părintelui"
+    },
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#8B1E3F"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.predicileparintelui.app",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ],
+        "NSMicrophoneUsageDescription": "This app does not require microphone access.",
+        "NSCameraUsageDescription": "This app does not require camera access."
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.predicileparintelui.app",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#8B1E3F"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "https",
+              "host": "predicileparintelui.app",
+              "pathPrefix": "/"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "name": "Predicile Părintelui",
+      "shortName": "Predicile",
+      "description": "Orthodox Christian sermon audio streaming application - Aplicație pentru streaming audio predici ortodoxe",
+      "lang": "ro",
+      "scope": "/",
+      "themeColor": "#8B1E3F",
+      "backgroundColor": "#F0F4F8",
+      "display": "standalone",
+      "orientation": "portrait-primary",
+      "startUrl": "/",
+      "splash": {
+        "backgroundColor": "#8B1E3F",
+        "resizeMode": "contain",
+        "image": "./assets/images/splash-icon.png"
+      }
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/notification-icon.png",
+          "color": "#8B1E3F",
+          "sounds": [
+            "./assets/sounds/notification.wav"
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "predicile-parintelui"
+      }
     }
   }
 }
